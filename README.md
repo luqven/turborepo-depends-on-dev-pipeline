@@ -10,6 +10,9 @@ Turborepo doesn't have this feature built-in for persistent tasks, but it's poss
 
 ## Setting up a Turborepo task pipeline
 
+> [!TIP]
+> Follow along on the reproduction branch [l/without-wait-dev](https://github.com/luqven/turborepo-depends-on-dev-pipeline/tree/l/wihtout-wait-dev)
+
 Turborepo uses your package manager, in our case [pnpm](https://pnpm.io/), to run tasks. You can run tasks from the root of the repository or from the directory of the package or application you want to run.
 
 You define the tasks you want to run in the `turbo.json` file at the root of the repository.
