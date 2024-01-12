@@ -9,11 +9,7 @@
     },
     "dev": {
       "cache": false,
-      "persistent": true,
-      "dependsOn": ["^wait-dev"]
-    },
-    "wait-dev": {
-      "cache": false
+      "persistent": true
     }
   }
 }

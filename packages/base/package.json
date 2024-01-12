@@ -5,8 +5,7 @@
   "module": "dist/acme-base.esm.js",
   "scripts": {
     "build": "rimraf dist/; preconstruct build",
-    "dev": "rimraf dist/; sleep 5; preconstruct dev",
-    "wait-dev": "wait-on dist/"
+    "dev": "rimraf dist/; sleep 5; preconstruct dev"
   },
   "files": [
     "index.js",
@@ -20,8 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
-    "@preconstruct/cli": "^2.1.5",
-    "wait-on": "^7.2.0"
+    "@preconstruct/cli": "^2.1.5"
   },
   "dependencies": {
     "rimraf": "^3.0.2"
