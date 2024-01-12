@@ -1,5 +1,7 @@
 # Running turborepo dev in series
 
+>  Based off of [this issue](https://github.com/vercel/turbo/issues/460) and this [Repo](https://github.com/VanTanev/turborepo-reproduce-460)
+
 Running multiple `dev` tasks in parallel is a common necessity when working with a monorepo. It's also a common source of bugs.
 
 Some monorepo tools allow you to run **persistent** tasks in series. This is useful when you have a package `dev` script that depends on another package `dev` script completing in the same repository.
