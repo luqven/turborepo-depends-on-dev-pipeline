@@ -1,0 +1,29 @@
+{
+  "name": "@acme/base",
+  "version": "1.0.0",
+  "main": "dist/acme-base.cjs.js",
+  "module": "dist/acme-base.esm.js",
+  "scripts": {
+    "build": "rimraf dist/; preconstruct build",
+    "dev": "rimraf dist/; sleep 5; preconstruct dev",
+    "wait-dev": "wait-on dist/"
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "xpreconstruct": {
+    "entrypoints": [
+      "./index.js"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@preconstruct/cli": "^2.1.5",
+    "wait-on": "^7.2.0"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
